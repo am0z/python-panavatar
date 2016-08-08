@@ -211,8 +211,8 @@ def _get_octave(seed, coord):
     x = coord.real
     y = coord.imag
 
-    cellx = math.floor(x)
-    celly = math.floor(y)
+    cellx = int(math.floor(x))
+    celly = int(math.floor(y))
 
     value00 = _perlin_random(seed, cellx, celly)
     value10 = _perlin_random(seed, cellx + 1, celly)
